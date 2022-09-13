@@ -10,7 +10,7 @@ return false;
 }
 else if (username=="Bhavya" && password == "Bhavya@123"){
     alert ("Login successfully");
-window.location = "index.html"; // Redirecting to other page.
+window.location = "index2.html"; // Redirecting to other page.
 return false;
 }
 else{
