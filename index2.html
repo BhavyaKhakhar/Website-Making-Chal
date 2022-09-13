@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURIS</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&family=Spartan:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- first we have to create a navbar  -->
+    <section id="header">
+        <!-- create an anchor tag to insert logo -->
+        <img  src="Screenshot-2.png" class="logo rotate" width="600" height="150" alt="">
+        <!-- now we want to create nav links -->
+        <div>
+            <ul id="navbar" >
+                <!-- i want our home page to be highlighted thats why it should have active class-->
+                <li><a class="active" href="index2.html">Dashboard</a></li>
+                <li><a href="attendence.html">Attendance</a></li>
+                <li><a href="acedamicfees.html">Academic Fees</a></li>
+                <li><a href="academicper.html">Academic Performance</a></li>
+                <li><a href="unires.html">University Resources</a></li>
+                
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+            
+        </div>
+
+        <div id="mobile">
+
+            
+                <i id="bar" class="fas fa-outdent"></i>
+            
+           
+            <!-- we dont want bullet point so simply remove li -->
+        </div>
+    </section>
+
+    <!-- nav bar section is done  -->
+
+    <section id="hero">
+        <h4>Your one-stop destination for learning and exploring !</h4>
+        <h2>Dashboard</h2>
+
+        <h1>Your academic aid!</h1>
+    </section>
+            <center><img src='Screenshot-1.png'></center>
+    <br>
+    <br>
+    <br>
+   
+    <section id="features" class="section-p1">
+        <div class="fe-box">
+            
+            <h6>Course Registration</h6>
+        </div>
+        <div class="fe-box">
+            <h6>Academic Session Schedule</h6>
+          </div>
+         
+       
+          <div class="fe-box">
+            
+            <h6>University Resources</h6>
+          </div>
+          <div class="fe-box">
+            
+            <h6>Attendance</h6>
+          </div>
+    </section>
+    <div class="box box-info">
+        <div class="'box-header">
+            <i><b><h3 class="box-title">Quick Links</h3></i></b>
+            <br>
+            <br>
+        </div>
+    </div>
+    <h5><a href ="course.html">Course Registration Monsoon 2022</a></h5>
+    <br>
+    <br>
+    <h5><a href="coursedir.html">Course Directory</a></h5>
+    <br>
+    <br>
+    <h5><a href="P-NP Course.html">Your P/NP Course</a></h5>
+    <br>
+    <br>
+    <h5><a href="https://docs.google.com/document/d/1DUc_EVP7deZmEWDaZjDqrljQ03FVKyUWGKmNid8Ib0I/edit">Leave a absence for a Semester or a Year</a></h5>
+    <br>
+    <br>
+    
+    <footer class="section-p1 section-m1">
+        <!-- 4 diffrent columns -->
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>  Commerce-6-Roads, Navrangpura </p>
+            <p><strong>Phone:</strong> +91 851** 1***1 / +91 940** 7***1</p>
+            <p><strong>Hours:</strong>  09.00 - 18.00, Mon - Sat </p>
+            <div class="follow">
+                <h4>Follow us on Social Media</h4>
+                <div class="icon"> 
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+                 <!-- i also want to make click on icon take to the site page -->
+               
+            </div>
+           
+        </div>
+        
+    
+        <!-- second column -->
+        <div class="col">
+            <h4>About</h4>
+            <a href="abt.html">About us</a>
+            <!-- use a tag because these a tag are the links -->
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+    
+       <div>
+            <p class="copyright"><span>&#169;</span>All Copyrights Reserved. This Website is made by Bhavya Khakhar and Milee Bajpai.</p>
+        </div>
+        
+     
+    </footer>
+    <script src="index.js"></script>
+    <script>
+        const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+
+// SOCIAL PANEL JS
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
+    </script>
+    </body>
+    
+    </html>
